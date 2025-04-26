@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibliobyte</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>📚 Bibliobyte</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#biblioteca">Biblioteca</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <section>
+      <h2>¡Bienvenido a Bibliobyte!</h2>
+      <p>Tu biblioteca virtual para niños curiosos de 5 a 13 años 📖✨</p>
+      <a href="#biblioteca" class="btn">Explorar libros</a>
+    </section>
+    <img src="images/lector-roboto.png" alt="Robot lector con libros" class="lector-roboto-images" />
+  </main>
+
+  <section id="biblioteca" class="biblioteca">
+    <h2>Nuestra Biblioteca</h2>
+
+    <!-- Filtros -->
+    <div class="filtros">
+      <select id="filtroEdad">
+        <option value="todos">Todas las edades</option>
+        <option value="5-7">5-7 años</option>
+        <option value="8-10">8-10 años</option>
+        <option value="11-13">11-13 años</option>
+      </select>
+
+      <select id="filtroTipo">
+        <option value="todos">Todos los tipos</option>
+        <option value="cuento">Cuento</option>
+        <option value="educativo">Educativo</option>
+        <option value="ciencias">Ciencias</option>
+      </select>
+
+      <input type="text" id="buscador" placeholder="Buscar por título o autor...">
+    </div>
+
+    <!-- Contenedor de libros -->
+    <div class="contenedor-libros" id="contenedorLibros">
+      <!-- Libros se insertan aquí -->
+
+      <div class="libro" data-edad="5-7" data-tipo="cuento" data-nombre="Prueba 001">
+        <h3>Prueba 001</h3>
+        <p>Autor: Jeffry Alvarado</p>
+        <iframe src="libros/prueba-001.pdf"></iframe>
+        <div class="botones">
+          <a href="libros/Prueba-001.pdf" target="_blank">Leer</a>
+          <a href="libros/Prueba-001.pdf" download>Descargar</a>
+        </div>
+      </div>
+
+      <div class="libro" data-edad="8-10" data-tipo="educativo" data-nombre="Matemáticas Divertidas">
+        <h3>Matemáticas Divertidas</h3>
+        <p>Autor: Ana Torres</p>
+        <iframe src="libros/matematicas-divertidas.pdf"></iframe>
+        <div class="botones">
+          <a href="libros/matematicas-divertidas.pdf" target="_blank">Leer</a>
+          <a href="libros/matematicas-divertidas.pdf" download>Descargar</a>
+        </div>
+      </div>
+
+      <div class="libro" data-edad="11-13" data-tipo="ciencias" data-nombre="Descubriendo el Universo">
+        <h3>Descubriendo el Universo</h3>
+        <p>Autor: Carlos Rivera</p>
+        <iframe src="libros/descubriendo-el-universo.pdf"></iframe>
+        <div class="botones">
+          <a href="libros/descubriendo-el-universo.pdf" target="_blank">Leer</a>
+          <a href="libros/descubriendo-el-universo.pdf" download>Descargar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>Hecho con 💙 para pequeños lectores digitales. © 2025 Bibliobyte</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
