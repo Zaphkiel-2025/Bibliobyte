@@ -1,10 +1,10 @@
-/* Fondo general del sitio */
+/* Estilos generales */
 body {
-  background-color: #BFB8AE; /* Beige claro */
-  color: #333;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #BFB8AE; /* Beige claro */
+  color: #333;
 }
 
 /* Encabezado */
@@ -13,6 +13,11 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
 /* Navegación (menú) */
@@ -38,6 +43,15 @@ nav a {
   padding: 40px;
   background-color: #B0B8AB; /* Verde muy pálido */
   flex-wrap: wrap;
+}
+
+.hero h2 {
+  font-size: 2em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 400px;
 }
 
 /* Botones */
@@ -66,6 +80,23 @@ nav a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.libro h3 {
+  margin-top: 0;
+  color: #264037; /* Verde oscuro */
+}
+
+.libro p {
+  font-weight: bold;
+}
+
+.libro iframe {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
 /* Footer */
 footer {
   background-color: #264037; /* Igual que el header */
@@ -74,6 +105,11 @@ footer {
   padding: 10px;
   font-size: 0.9em;
 }
+
+.botones a:hover {
+  background-color: #0099cc; /* Ajustado al color de hover */
+}
+
 
 
 .botones a:hover {
