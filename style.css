@@ -3,12 +3,12 @@ body {
   font-family: 'Press Start 2P', cursive;
   margin: 0;
   padding: 0;
-  background-color: #B0B8AB;
-  color: #B0B8AB;
+  background-color: #f0f8ff;
+  color: #f76c5e;
 }
 
 header {
-  background-color: #66ccff;
+  background-color: #B8C2BA;
   color: white;
   padding: 20px;
   text-align: center;
