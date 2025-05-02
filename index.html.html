@@ -31,26 +31,15 @@
   <section id="biblioteca" class="biblioteca">
     <h2>Nuestra Biblioteca</h2>
 
-    <!-- Filtros -->
-    <div class="filtros">
-      <select id="filtroEdad">
-        <option value="todos">Todas las edades</option>
-        <option value="5-7">5-7 años</option>
-        <option value="8-10">8-10 años</option>
-        <option value="11-13">11-13 años</option>
-      </select>
+    <!-- Menú de categorías -->
+<div class="categorias-menu">
+  <a href="#adivinanzas">🤔 Adivinanzas</a>
+  <a href="#ciencias">🔬 Ciencias</a>
+  <a href="#cuentos">📖 Cuentos</a>
+  <a href="#expresion">🎨 Expresión Artística</a>
+</div>
 
-      <select id="filtroTipo">
-        <option value="todos">Todos los tipos</option>
-        <option value="cuento">Cuento</option>
-        <option value="educativo">Educativo</option>
-        <option value="ciencias">Ciencias</option>
-      </select>
-
-      <input type="text" id="buscador" placeholder="Buscar por título o autor...">
-    </div>
-
-    <!-- Contenedor de libros -->
+<!-- Contenedor de libros -->
     <div class="contenedor-libros" id="contenedorLibros">
       <!-- Libros se insertan aquí -->
 
@@ -80,8 +69,8 @@
 </section>
 
 <!-- Sección: Ciencia -->
-<section id="ciencia">
-  <h2>Ciencia</h2>
+<section id="ciencias">
+  <h2>🔬 Ciencias</h2>
 
   <div class="libro" data-edad="8-10" data-tipo="ciencia" data-nombre="Descubriendo el Universo">
     <h3>Descubriendo el Universo</h3>
@@ -95,8 +84,18 @@
 </section>
 
 <!-- Sección: Matemáticas -->
-<section id="matematicas">
-  <h2>Matemáticas</h2>
+<section id="adivinanzas">
+  <h2>🤔 Adivinanzas</h2>
+  <div class="libro" data-edad="8-10" data-tipo="adivinanza" data-nombre="Adivinanzas divertidas">
+    <h3>Adivinanzas divertidas</h3>
+    <p>Autor: Varios autores</p>
+    <iframe src="libros/adivinanzas/adivinanzas-divertidas.pdf" width="100%" height="300px"></iframe>
+    <div class="botones">
+      <a href="libros/adivinanzas/adivinanzas-divertidas.pdf" target="_blank">Leer en otra pestaña</a>
+      <a href="libros/adivinanzas/adivinanzas-divertidas.pdf" download>Descargar</a>
+    </div>
+  </div>
+
 
   <div class="libro" data-edad="8-10" data-tipo="matematicas" data-nombre="Sumas Divertidas">
     <h3>Sumas Divertidas</h3>
@@ -110,8 +109,8 @@
 </section>
 
 <!-- Sección: Lectura -->
-<section id="lectura">
-  <h2>Lectura</h2>
+<section id="expresion">
+  <h2>🎨 Expresión Artística</h2>
 
   <div class="libro" data-edad="5-7" data-tipo="lectura" data-nombre="Abecedario Mágico">
     <h3>Abecedario Mágico</h3>
@@ -130,11 +129,13 @@
   </section>
 
   <footer id="contacto">
-    <p>Hecho con 💙 para pequeños lectores digitales. © 2025 Bibliobyte</p>
+    <p>Hecho con 💙 para pequeños lectores digitales. © Jaffeth Alvarado 2025 Bibliobyte</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
 
 
