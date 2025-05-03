@@ -116,3 +116,20 @@ footer {
   background-color: #0099cc;
 }
 
+/* Estilo para organizar los libros en galería */
+.biblioteca {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.libro {
+  width: 300px;
+  background-color: #B0B8AB;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
