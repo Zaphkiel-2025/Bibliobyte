@@ -118,18 +118,9 @@ footer {
 
 /* Estilo para organizar los libros en galería */
 .biblioteca {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 20px;
+  justify-items: center;
 }
-
-.libro {
-  width: 300px;
-  background-color: #B0B8AB;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
