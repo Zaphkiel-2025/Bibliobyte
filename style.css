@@ -140,3 +140,28 @@ footer {
     text-align: center;
   }
 }
+
+/* Reglas generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reglas para el contenedor y las tarjetas */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 15px; /* Espacio entre las tarjetas */
+    padding: 10px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Reglas adicionales (si las tienes) */
