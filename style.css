@@ -124,3 +124,19 @@ footer {
   padding: 20px;
   justify-items: center;
 }
+
+@media (max-width: 500px) {
+  .libro iframe {
+    height: 150px;
+  }
+
+  .botones {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .botones a {
+    text-align: center;
+  }
+}
