@@ -71,13 +71,14 @@ nav a {
   background-color: #B8C2BA; /* Verde grisáceo claro */
 }
 
-/* Tarjetas de libros */
+/* Estilos para las tarjetas de libros */
 .libro {
-  background-color: #B0B8AB; /* Fondo de cada tarjeta */
+  background-color: #B0B8AB; /* Fondo de la tarjeta */
   padding: 20px;
   margin: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .libro h3 {
@@ -106,87 +107,16 @@ footer {
   font-size: 0.9em;
 }
 
-.botones a:hover {
-  background-color: #0099cc; /* Ajustado al color de hover */
-}
-
-
-
-.botones a:hover {
-  background-color: #0099cc;
-}
-
 /* Estilo para organizar los libros en galería */
-.biblioteca {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  justify-items: center;
-}
-
-@media (max-width: 500px) {
-  .libro iframe {
-    height: 150px;
-  }
-
-  .botones {
-    flex-direction: column;
-    gap: 10px;
-    align-items: stretch;
-  }
-
-  .botones a {
-    text-align: center;
-  }
-}
-
-/* Reglas generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Reglas para el contenedor y las tarjetas */
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-    gap: 15px; /* Espacio entre las tarjetas */
-    padding: 10px;
-}
-
-.card {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-}
-
 .galeria-libros {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 0 20px;
-}
-
-
-
-.galeria-libros {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
   margin-bottom: 40px;
 }
 
-.libro {
-  background-color: #B0B8AB;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
+/* Reglas de diseño para pantallas pequeñas */
 @media (max-width: 600px) {
   .hero {
     flex-direction: column;
